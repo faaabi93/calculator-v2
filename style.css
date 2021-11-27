@@ -1,3 +1,64 @@
+.calculator {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 100;
+    background-color: rgb(84, 81, 86);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 1px;
+    column-gap: 1px;
+    width: 360px;
+    height: 540px;
+    background-color: rgb(84, 81, 86);
+    border: 1px solid rgb(84, 81, 86);
+    border-radius: 10px;
+}
+
+.bottom-right {
+    border-bottom-right-radius: 10px;
+}
+
+.bottom-left {
+    border-bottom-left-radius: 10px;
+}
+
+.num {
+    background-color: rgb(126, 124, 128);
+}
+
+.control1 {
+    background-color: rgb(101, 98, 103);
+}
+
+.control2 {
+    background-color: rgb(242, 163, 60);
+}
+
+.num-large {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.display {
+    padding-right: 15px;
+    font-size: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgb(84, 81, 86);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.nodisplay {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 #github {
