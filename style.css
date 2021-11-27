@@ -5,7 +5,7 @@
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1.5fr 1fr 1fr 1fr 1fr 1fr;
     row-gap: 1px;
     column-gap: 1px;
     width: 360px;
@@ -13,6 +13,11 @@
     background-color: rgb(84, 81, 86);
     border: 1px solid rgb(84, 81, 86);
     border-radius: 10px;
+}
+
+.error {
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .bottom-right {
@@ -26,13 +31,31 @@
 .num {
     background-color: rgb(126, 124, 128);
 }
+.num:hover {
+    background-color: rgb(145, 143, 147);
+}
+.num:active {
+    background-color: rgb(164, 163, 166);
+}
 
 .control1 {
     background-color: rgb(101, 98, 103);
 }
+.control1:hover {
+    background-color: rgb(124, 120, 126);
+}
+.control1:active {
+    background-color: rgb(147, 144, 149);
+}
 
 .control2 {
     background-color: rgb(242, 163, 60);
+}
+.control2:hover {
+    background-color: rgb(243, 176, 89);
+}
+.control2:active {
+    background-color: rgb(245, 190, 118);
 }
 
 .num-large {
@@ -58,6 +81,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Text not selectable */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 
