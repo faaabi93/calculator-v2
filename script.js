@@ -82,7 +82,7 @@ function addToDisplay(num) {
 
 function setDisplay(num) {
     if(num.toString().length > 10) {
-        errorField.textContent = "sdfölasdfja"
+        errorField.textContent = "The number is to big to fit this tiny screen. So its not correct!"
     }
     display.textContent = num.toString().slice(0, 9);
     displayVal = display.textContent;
