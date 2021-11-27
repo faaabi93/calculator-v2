@@ -39,12 +39,10 @@ function setOperator(e) {
         clearDisplay();
     }
     if(operator === "=") {
-        asdf()
         setDisplay(operate(currentOp, firstVal, displayVal));
         firstVal = displayVal
         currentOp = undefined;
     }
-    asdf();
 }
 
 /*--------------- Display Function -------------*/
@@ -113,12 +111,7 @@ function multiply(n, m) {
 function divide(n, m) {
     return n*1 / m*1;
 }
-/*--------------- Helper --------------*/
-function asdf() {
-    console.log(`DisplayVal ${displayVal}`)
-    console.log(`First ${firstVal}`)
-    console.log(`Op: ${currentOp}`)
-}
+
 /*--------------- Startup -------------*/
 addNumListeners(numberButtons); 
 addDeleteListener(deleteButton);
