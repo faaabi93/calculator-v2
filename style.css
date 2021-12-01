@@ -28,13 +28,25 @@ body {
     border-radius: 10px;
 }
 
-.error {
+.header {
+    display: flex;
+    column-gap: 5px;
     font-size: 12px;
     grid-column-start: 1;
     grid-column-end: 5;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-top: 5px;
 }
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.close {background-color: #FF605C;}
+.minimize {background-color: #FFBD44;}
+.maximize {background-color: #00CA4E;}
 
 .bottom-right {
     border-bottom-right-radius: 10px;
